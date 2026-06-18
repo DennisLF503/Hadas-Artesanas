@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hacer Pedido – La Perra de Tinkerbell</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <span class="brand-icon">✿</span> La Perra de Tinkerbell
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link btn-pedido" href="pedido.html">Hacer Pedido</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Hablemos</p>
+      <h1>Hacer <em>Pedido</em></h1>
+      <p class="mt-2">Completa el formulario y te contactamos para coordinar los detalles y el pago.</p>
+    </div>
+  </div>
+
+  <!-- ORDER FORM -->
+  <section class="order-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <!-- Info cards -->
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <div style="background: var(--cream); border-radius: var(--radius-sm); padding: 1.25rem; text-align: center;">
+                <div style="font-size: 1.8rem; margin-bottom: .4rem;">⏰</div>
+                <h6 style="font-family: var(--ff-display); color: var(--brown); font-size: .95rem;">Tiempo de elaboración</h6>
+                <p style="font-size: .82rem; color: var(--text-mid); margin: 0;">3 a 7 días hábiles según el producto.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div style="background: var(--cream); border-radius: var(--radius-sm); padding: 1.25rem; text-align: center;">
+                <div style="font-size: 1.8rem; margin-bottom: .4rem;">💳</div>
+                <h6 style="font-family: var(--ff-display); color: var(--brown); font-size: .95rem;">Métodos de pago</h6>
+                <p style="font-size: .82rem; color: var(--text-mid); margin: 0;">Transferencia, efectivo o depósito.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div style="background: var(--cream); border-radius: var(--radius-sm); padding: 1.25rem; text-align: center;">
+                <div style="font-size: 1.8rem; margin-bottom: .4rem;">📦</div>
+                <h6 style="font-family: var(--ff-display); color: var(--brown); font-size: .95rem;">Entrega</h6>
+                <p style="font-size: .82rem; color: var(--text-mid); margin: 0;">Coordinamos por WhatsApp o envío.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="form-wrapper">
+            <form id="orderForm" novalidate>
+
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label class="form-label" for="nombre">Nombre completo *</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" />
+                  <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="email">Correo electrónico *</label>
+                  <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com" />
+                  <div class="invalid-feedback">Ingresa un correo válido.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="telefono">Teléfono / WhatsApp</label>
+                  <input type="tel" class="form-control" id="telefono" placeholder="(opcional)" />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="producto">Producto de interés *</label>
+                  <select class="form-select" id="producto">
+                    <option value="">Selecciona una categoría…</option>
+                    <optgroup label="🧶 Crochet">
+                      <option value="bolso">Bolso de mano tejido</option>
+                      <option value="accesorios">Accesorios para el cabello</option>
+                      <option value="amigurumi">Amigurumi personalizado</option>
+                      <option value="tapetes">Tapetes y posavasos</option>
+                      <option value="otro-crochet">Otro (crochet)</option>
+                    </optgroup>
+                    <optgroup label="🕯️ Velas Aromáticas">
+                      <option value="vela-lavanda">Vela de lavanda</option>
+                      <option value="vela-citrica">Vela cítrica energizante</option>
+                      <option value="set-velas">Set de velas regalo</option>
+                      <option value="otro-vela">Otro (velas)</option>
+                    </optgroup>
+                    <optgroup label="🌸 Flores Eternas">
+                      <option value="rosas">Arreglo de rosas preservadas</option>
+                      <option value="ramo-seco">Ramo de flores secas</option>
+                      <option value="cuadro">Cuadro floral decorativo</option>
+                      <option value="otro-flores">Otro (flores)</option>
+                    </optgroup>
+                  </select>
+                  <div class="invalid-feedback">Selecciona un producto.</div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="personalizacion">Personalización deseada</label>
+                  <input type="text" class="form-control" id="personalizacion"
+                    placeholder="Colores, medidas, aromas, nombre a bordar, etc." />
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="mensaje">Mensaje o consulta adicional</label>
+                  <textarea class="form-control" id="mensaje" rows="4"
+                    placeholder="Cuéntanos más sobre lo que necesitas, para quién es, o cualquier detalle especial…"></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100" style="padding: .85rem;">
+                    Enviar pedido ✿
+                  </button>
+                  <p class="text-center mt-2" style="font-size: .8rem; color: var(--text-light);">
+                    Te responderemos en menos de 24 horas.
+                  </p>
+                </div>
+
+              </div>
+            </form>
+
+            <!-- SUCCESS MESSAGE -->
+            <div id="successMsg">
+              <div style="font-size: 2.5rem; margin-bottom: .75rem;">🎉</div>
+              <h4 style="font-family: var(--ff-display); color: var(--brown);">¡Pedido recibido!</h4>
+              <p style="margin: .5rem 0 0; font-size: .95rem;">
+                Gracias por contactarnos. Te responderemos pronto para coordinar los detalles de tu pedido.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="footer-brand">✿ La Perra de Tinkerbell</h5>
+          <p>Artesanías hechas a mano con amor, dedicación y materiales de calidad.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Páginas</h6>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="pedido.html">Hacer Pedido</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Contáctanos</h6>
+          <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <p class="text-center footer-copy">© 2026 La Perra de Tinkerbell · Instituto Nacional INSAMT – Módulo 1.3</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

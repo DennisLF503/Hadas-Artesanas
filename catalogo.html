@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo – La Perra de Tinkerbell</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <span class="brand-icon">✿</span> La Perra de Tinkerbell
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link btn-pedido" href="pedido.html">Hacer Pedido</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Lo que ofrecemos</p>
+      <h1>Catálogo de <em>Productos</em></h1>
+      <p class="mt-2">Explora nuestras tres líneas artesanales. Todos los productos son personalizables.</p>
+    </div>
+  </div>
+
+  <!-- CATALOG -->
+  <section class="catalog-section">
+    <div class="container">
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-cat="all">✿ Todos</button>
+        <button class="filter-btn" data-cat="crochet">🧶 Crochet</button>
+        <button class="filter-btn" data-cat="velas">🕯️ Velas</button>
+        <button class="filter-btn" data-cat="flores">🌸 Flores</button>
+      </div>
+
+      <!-- CROCHET -->
+      <div class="catalog-anchor" id="crochet"></div>
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="crochet">
+          <div class="product-card">
+            <div class="product-img">🧶</div>
+            <div class="product-info">
+              <p class="product-tag">Crochet</p>
+              <h4 class="product-name">Bolso de mano tejido</h4>
+              <p class="product-desc">Tejido a mano en hilo de algodón, con asas reforzadas. Disponible en varios colores.</p>
+              <p class="product-price">$18 – $25
+                <span class="price-note">Personalizable en color y tamaño</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="crochet">
+          <div class="product-card">
+            <div class="product-img">🎀</div>
+            <div class="product-info">
+              <p class="product-tag">Crochet</p>
+              <h4 class="product-name">Accesorios para el cabello</h4>
+              <p class="product-desc">Diademas, moños y clips tejidos a mano. Perfectos para regalar o usar a diario.</p>
+              <p class="product-price">$5 – $12
+                <span class="price-note">Disponible en colores a elegir</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="crochet">
+          <div class="product-card">
+            <div class="product-img">🧸</div>
+            <div class="product-info">
+              <p class="product-tag">Crochet</p>
+              <h4 class="product-name">Amigurumis personalizados</h4>
+              <p class="product-desc">Pequeñas figuras tejidas a mano con el diseño que tú elijas: animales, personajes o mascotas.</p>
+              <p class="product-price">$15 – $30
+                <span class="price-note">Diseño 100% personalizable</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="crochet">
+          <div class="product-card">
+            <div class="product-img">🏠</div>
+            <div class="product-info">
+              <p class="product-tag">Crochet</p>
+              <h4 class="product-name">Tapetes y posavasos</h4>
+              <p class="product-desc">Decoración del hogar tejida a mano. Ideales para mesa, cocina o como regalo.</p>
+              <p class="product-price">$8 – $20
+                <span class="price-note">Set de 4 unidades disponible</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VELAS -->
+        <div class="catalog-anchor" id="velas"></div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="velas">
+          <div class="product-card">
+            <div class="product-img">🕯️</div>
+            <div class="product-info">
+              <p class="product-tag">Velas Aromáticas</p>
+              <h4 class="product-name">Vela de lavanda</h4>
+              <p class="product-desc">Elaborada con cera de soja y aceite esencial de lavanda pura. Relajante y de larga duración.</p>
+              <p class="product-price">$10 – $18
+                <span class="price-note">Tamaños pequeño, mediano y grande</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="velas">
+          <div class="product-card">
+            <div class="product-img">🍊</div>
+            <div class="product-info">
+              <p class="product-tag">Velas Aromáticas</p>
+              <h4 class="product-name">Vela cítrica energizante</h4>
+              <p class="product-desc">Mezcla de naranja, limón y bergamota. Perfecta para la mañana o espacios de trabajo.</p>
+              <p class="product-price">$10 – $18
+                <span class="price-note">Personaliza tu aroma favorito</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="velas">
+          <div class="product-card">
+            <div class="product-img">🌿</div>
+            <div class="product-info">
+              <p class="product-tag">Velas Aromáticas</p>
+              <h4 class="product-name">Set de velas regalo</h4>
+              <p class="product-desc">Tres velas en presentación regalo con caja decorada. Ideal para cumpleaños o aniversarios.</p>
+              <p class="product-price">$25 – $35
+                <span class="price-note">Aromas a elegir, caja personalizable</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLORES -->
+        <div class="catalog-anchor" id="flores"></div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="flores">
+          <div class="product-card">
+            <div class="product-img">🌸</div>
+            <div class="product-info">
+              <p class="product-tag">Flores Eternas</p>
+              <h4 class="product-name">Arreglo de rosas preservadas</h4>
+              <p class="product-desc">Rosas naturales preservadas que duran hasta 3 años. Vienen en caja de madera o cristal.</p>
+              <p class="product-price">$20 – $45
+                <span class="price-note">Colores y presentación a elegir</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="flores">
+          <div class="product-card">
+            <div class="product-img">🌾</div>
+            <div class="product-info">
+              <p class="product-tag">Flores Eternas</p>
+              <h4 class="product-name">Ramo de flores secas</h4>
+              <p class="product-desc">Combinaciones naturales de flores secas y hierbas aromáticas. Decorativas y duraderas.</p>
+              <p class="product-price">$15 – $28
+                <span class="price-note">Composición personalizable</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 product-item" data-cat="flores">
+          <div class="product-card">
+            <div class="product-img">🖼️</div>
+            <div class="product-info">
+              <p class="product-tag">Flores Eternas</p>
+              <h4 class="product-name">Cuadro floral decorativo</h4>
+              <p class="product-desc">Marco con flores secas y preservadas, listo para colgar. Cada pieza es única e irrepetible.</p>
+              <p class="product-price">$30 – $55
+                <span class="price-note">Tamaños y paleta de colores a elección</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PEDIDO CTA -->
+      <div class="text-center mt-5 py-4">
+        <p class="section-eyebrow">¿Te gustó algo?</p>
+        <h3 style="font-family: var(--ff-display); color: var(--text-dark);">Todos los productos son <em style="color:var(--brown)">personalizables</em></h3>
+        <p style="color: var(--text-mid);">Cuéntanos qué necesitas y lo creamos para ti.</p>
+        <a href="pedido.html" class="btn btn-primary-custom mt-2">Hacer mi pedido</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="footer-brand">✿ La Perra de Tinkerbell</h5>
+          <p>Artesanías hechas a mano con amor, dedicación y materiales de calidad.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Páginas</h6>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="pedido.html">Hacer Pedido</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Contáctanos</h6>
+          <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <p class="text-center footer-copy">© 2026 La Perra de Tinkerbell · Instituto Nacional INSAMT – Módulo 1.3</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

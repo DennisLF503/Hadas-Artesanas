@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería – La Perra de Tinkerbell</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <span class="brand-icon">✿</span> La Perra de Tinkerbell
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link btn-pedido" href="pedido.html">Hacer Pedido</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Nuestro trabajo</p>
+      <h1>Galería de <em>Creaciones</em></h1>
+      <p class="mt-2">Haz clic en cualquier imagen para ver los detalles. Cada pieza es única.</p>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-grid">
+
+        <div class="gallery-item"
+          data-emoji="🧶" data-title="Bolso de mano tejido"
+          data-desc="Tejido en hilo de algodón artesanal. Disponible en todos los colores.">
+          <div class="gallery-placeholder" style="background: #f5e6d3;">🧶</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+        <div class="gallery-item"
+          data-emoji="🌸" data-title="Arreglo de rosas preservadas"
+          data-desc="Rosas naturales preservadas en caja de madera. Duración hasta 3 años.">
+          <div class="gallery-placeholder tall" style="background: #fce4ec;">🌸</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+        <div class="gallery-item"
+          data-emoji="🕯️" data-title="Set de velas regalo"
+          data-desc="Tres velas aromáticas en caja decorada, aromas a elegir.">
+          <div class="gallery-placeholder" style="background: #fff8e1;">🕯️</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+        <div class="gallery-item"
+          data-emoji="🧸" data-title="Amigurumi personalizado"
+          data-desc="Figura tejida a mano con el diseño que el cliente eligió.">
+          <div class="gallery-placeholder tall" style="background: #e8f5e9;">🧸</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+        <div class="gallery-item"
+          data-emoji="🎀" data-title="Accesorios crochet"
+          data-desc="Diademas y accesorios tejidos a mano en colores pasteles.">
+          <div class="gallery-placeholder" style="background: #fce4ec;">🎀</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+        <div class="gallery-item"
+          data-emoji="🌾" data-title="Ramo de flores secas"
+          data-desc="Composición natural de flores secas y hierbas. Sin mantenimiento.">
+          <div class="gallery-placeholder" style="background: #fff3e0;">🌾</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+        <div class="gallery-item"
+          data-emoji="🖼️" data-title="Cuadro floral decorativo"
+          data-desc="Marco con flores preservadas. Cada cuadro es único e irrepetible.">
+          <div class="gallery-placeholder tall" style="background: #f3e5f5;">🖼️</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+        <div class="gallery-item"
+          data-emoji="🏠" data-title="Tapetes de crochet"
+          data-desc="Set de posavasos tejidos a mano en hilo de algodón natural.">
+          <div class="gallery-placeholder" style="background: #e0f2f1;">🏠</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+        <div class="gallery-item"
+          data-emoji="🌿" data-title="Vela de hierbas naturales"
+          data-desc="Elaborada con cera de soja y aceites esenciales puros.">
+          <div class="gallery-placeholder" style="background: #f1f8e9;">🌿</div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lbClose" aria-label="Cerrar">✕</button>
+      <span class="lightbox-emoji" id="lbEmoji">🎨</span>
+      <h3 class="lightbox-title" id="lbTitle">Producto</h3>
+      <p class="lightbox-desc" id="lbDesc">Descripción del producto.</p>
+      <a href="pedido.html" class="btn btn-primary-custom mt-3">Pedir este producto</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="footer-brand">✿ La Perra de Tinkerbell</h5>
+          <p>Artesanías hechas a mano con amor, dedicación y materiales de calidad.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Páginas</h6>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="pedido.html">Hacer Pedido</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Contáctanos</h6>
+          <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <p class="text-center footer-copy">© 2026 La Perra de Tinkerbell · Instituto Nacional INSAMT – Módulo 1.3</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

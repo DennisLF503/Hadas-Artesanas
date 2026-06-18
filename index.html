@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hadas Artesanas - Artesanías a Mano</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-icon"></span> Hadas Artesanas 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link btn-pedido" href="pages/pedido.html">Hacer Pedido</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-section">
+    <div class="hero-overlay">
+      <div class="container text-center hero-content">
+        <p class="hero-eyebrow">Hecho a mano, con amor</p>
+        <h1 class="hero-title">Hadas<br /><em>Artesanas</em></h1>
+        <p class="hero-sub">Crochet · Velas Aromáticas · Flores Eternas</p>
+        <div class="hero-ctas">
+          <a href="pages/catalogo.html" class="btn btn-primary-custom">Ver Productos</a>
+          <a href="pages/pedido.html" class="btn btn-outline-custom">Hacer Pedido</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>↓</span>
+    </div>
+  </header>
+
+  <!-- DIVISOR ORGÁNICO -->
+  <div class="organic-divider">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#FDF6F0"/>
+    </svg>
+  </div>
+
+  <!-- PRESENTACIÓN CATEGORÍAS -->
+  <section class="section-categories" id="categorias">
+    <div class="container">
+      <p class="section-eyebrow text-center">Lo que hacemos</p>
+      <h2 class="section-title text-center">Tres líneas, un mismo amor<br />por lo artesanal</h2>
+      <div class="row g-4 mt-4">
+
+        <div class="col-md-4">
+          <div class="category-card" onclick="window.location='pages/catalogo.html#crochet'">
+            <div class="category-icon">🧶</div>
+            <h3>Crochet</h3>
+            <p>Tejidos a mano: accesorios, bolsos, ropa y decoraciones del hogar con hilos de alta calidad.</p>
+            <span class="category-link">Ver colección →</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="category-card category-card--mid" onclick="window.location='pages/catalogo.html#velas'">
+            <div class="category-icon"></div>
+            <h3>Velas Aromáticas</h3>
+            <p>Elaboradas con ingredientes naturales, en aromas únicos que llenan tu espacio de calma.</p>
+            <span class="category-link">Ver colección →</span>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="category-card" onclick="window.location='pages/catalogo.html#flores'">
+            <div class="category-icon"></div>
+            <h3>Flores Eternas</h3>
+            <p>Arreglos con flores preservadas y secas que duran años sin perder su belleza natural.</p>
+            <span class="category-link">Ver colección →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVISOR ORGÁNICO 2 -->
+  <div class="organic-divider-2">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C360,0 720,60 1080,30 C1260,15 1380,45 1440,30 L1440,60 L0,60 Z" fill="#fff"/>
+    </svg>
+  </div>
+
+  <!-- VALORES / WHY US -->
+  <section class="section-why">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="section-eyebrow">¿Por qué elegirnos?</p>
+          <h2 class="section-title">Cada pieza lleva<br /><em>tu historia</em></h2>
+          <p class="section-body">Cada artículo es único, elaborado con paciencia y detalle. Aceptamos pedidos personalizados para que tu regalo o decoración sea exactamente como lo imaginaste.</p>
+          <ul class="why-list">
+            <li><span class="why-check">✓</span> 100% hecho a mano</li>
+            <li><span class="why-check">✓</span> Personalización disponible</li>
+            <li><span class="why-check">✓</span> Materiales de calidad</li>
+            <li><span class="why-check">✓</span> Envíos coordinados por WhatsApp</li>
+          </ul>
+          <a href="pages/nosotros.html" class="btn btn-primary-custom mt-3">Conoce nuestra historia</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="why-visual">
+            <div class="why-card-floating why-card-1">
+              <span class="big-num">100%</span>
+              <span class="big-label">Artesanal</span>
+            </div>
+            <div class="why-card-floating why-card-2">
+              <span class="big-num"></span>
+              <span class="big-label">Personalizable</span>
+            </div>
+            <div class="why-card-floating why-card-3">
+              <span class="big-num"></span>
+              <span class="big-label">Hecho con amor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-cta">
+    <div class="container text-center">
+      <h2>¿Lista para tu pedido?</h2>
+      <p>Contáctanos y cuéntanos qué tienes en mente. Lo hacemos realidad.</p>
+      <a href="pages/pedido.html" class="btn btn-primary-custom btn-lg">Hacer mi pedido ahora</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="footer-brand"> Hadas Artesanas</h5>
+          <p>Artesanías hechas a mano con amor, dedicación y materiales de calidad.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Páginas</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/nosotros.html">Nosotros</a></li>
+            <li><a href="pages/catalogo.html">Catálogo</a></li>
+            <li><a href="pages/galeria.html">Galería</a></li>
+            <li><a href="pages/pedido.html">Hacer Pedido</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Contáctanos</h6>
+          <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <p class="mt-3 small">Respondemos por redes sociales y WhatsApp.</p>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <p class="text-center footer-copy"> Hadas Artesanas /p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
