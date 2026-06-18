@@ -1,5 +1,5 @@
 // ================================================
-// LA PERRA DE TINKERBELL – JavaScript principal
+// HADAS ARTESANAS – JavaScript principal
 // ================================================
 
 document.addEventListener('DOMContentLoaded', () => {
